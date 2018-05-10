@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Faculdade Impacta de Tecnologia</title>
+
+    <link rel="icon" href="{% static 'favicon.ico' %}" />
+</head>
+
+<body>
+    <header>
+        <img src="{% static 'imagens/logo.jpg' %}" width="200" />
+        <h1>Faculdade Impacta de Tecnologia</h1>
+        <h2>A TECNOLOGIA MUDA O SEU FUTURO</h2>
+        <nav>
+            <ul>
+                <li><a href="/cursos/">Cursos</a></li>
+                {% if request.sessao %}
+                    <li>Olá {{ request.sessao.usuario }}</li>
+                    <li><a href="/contas/">Contas</a></li>
+                    <li><a href="/sair/">Sair</a></li>
+                {% else %}
+                    <li><a href="/entrar/">Entrar</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+    <main>
+       {% block conteudo %}
+       
+       {% endblock  %}
+    </main>
+    <footer>
+        <hr />11 3254-8300 - Impacta 2018 - Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>

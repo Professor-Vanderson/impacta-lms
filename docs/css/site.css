@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #4d4dff;
+    color: white;
+    padding: 0.5em;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+}
+
+div.titulo {
+    display: inline-block;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main h1,
+main h2 {
+    border-bottom: 3px solid chartreuse;
+    padding-bottom: 2px;
+}
+
+nav.toc {
+    border: 0.1em solid black;
+    display: inline-block;
+}
+
+nav.toc h2 {
+    margin: 0;
+    font-size: 95%;
+    border-bottom: 0.5px solid black;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+ul.sem-bullets {
+    list-style-type: none;
+    padding: 0.5em;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td,
+table th {
+    border: 1px solid black;
+    padding: 0.2em;
+}
+
+footer.rodape {
+    background-color: #CECECE;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.2em 0;
+}

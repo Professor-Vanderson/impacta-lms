@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block conteudo %}
+        <h1>Faculdade Impacta de Tecnologia</h1>
+
+        <nav>
+            <h2>Navegue pelo nosso site</h2>
+            <ul>
+                <li><a href="#cursos">Nossos Cursos</a></li>
+                <li><a href="#premios">Prêmios e Reconhecimentos</a></li>
+                <li><a href="#smartclass">SmartClass</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+            </ul>
+        </nav>
+        <section id="cursos">
+            <h2>Conheça nossos Cursos</h2>
+
+            <p>
+                Considerada uma das melhores faculdades com foco em tecnologia do País, a Faculdade Impacta oferece cursos de Graduação,
+                Pós-Graduação e MBA e cursos técnicos. Conheça quais são as áreas de conhecimento que a Impacta aborda e
+                saiba um pouco mais sobre cada curso:
+            </p>
+            <figure>
+                <img src="{% static 'imagens/graduacao.jpg' %}" width="200" />
+                <img src="{% static 'imagens/mba.jpg' %}" width="200" />
+                <img src="{% static 'imagens/tecnico.jpg' %}" width="200" />
+                <img src="{% static 'imagens/up.jpg' %}" width="200" />
+            </figure>
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Nível</th>
+                        <th>Semestres</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Análise e Desenvolvimento de Sistemas</td>
+                        <td>Tecnólogo</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Sistemas da Informação</td>
+                        <td>Bacharelado</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Banco de Dados</td>
+                        <td>Tecnólogo</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Informática Industrial</td>
+                        <td>Técnico</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="premios">
+            <h2>Prêmios e Reconhecimentos</h2>
+
+            <p>
+                A Faculdade Impacta é altamente reconhecida por sua atuação no mercado da educação, o que comprova o compromisso da Instituição
+                com o ensino de qualidade e a dedicação do Grupo Impacta em transformar a sociedade através da tecnologia.
+                Desta maneira, ao longo dos anos a Faculdade Impacta tem recebido prêmios e reconhecimentos que são resultados
+                do trabalho contínuo de professores e funcionários e da determinação de seus alunos.
+            </p>
+
+            <ol>
+                <li>Maior Nota ENADE SP</li>
+                <li>Top 10 ENADE/MEC SP</li>
+                <li>Top 4 ENADE/MEC SP</li>
+                <li>Top 3 ENADE/MEC SP</li>
+            </ol>
+
+        </section>
+        <section id="smartclass">
+            <h2>Conheça o Smartclass</h2>
+
+            <p>
+                As salas de aula da Faculdade Impacta são equipadas com lousas eletrônicas, que capturam todos os pontos das aulas
+                <strong>presenciais</strong>, como voz, escrita
+                <strong>dinâmica</strong>, vídeos e navegação do professor. Todo o conteúdo é gravado e disponibilizado em uma sala
+                de ensino virtual para que o aluno assista quando e onde quiser, de qualquer plataforma digital.
+            </p>
+
+        </section>
+        <section id="eventos">
+            <h2>Pŕoximos Eventos</h2>
+
+            <p>
+                Confira os próximos eventos que os alunos e a Faculdade Impacta irão participar:
+            </p>
+            <article>
+                <h3>1- Governança e Gestão em TI</h3>
+
+                <p>
+                    Venha participar e descubra como as melhores práticas interagem para o sucesso do negócio no mundo tecnológico atual
+                </p>
+                <footer>
+                    Data:
+                    <time>20/03 - Horário: 20h às 21:30</time> -
+                    <a href="http://www.impacta.com.br">Saiba Mais</a>
+                </footer>
+            </article>
+            <article>
+                <h3>2- PHP 7 do início ao profissional</h3>
+
+                <p>
+                    Aprenda a fazer aplicações web modernas com uma das linguagens mais utilizadas. Veja desde a requisição no navegador até
+                    o acesso ao banco de dados.
+                </p>
+                <footer>
+                    Data:
+                    <time>01/03 - Horário: 20h às 21:30</time> -
+                    <a href="http://www.impacta.com.br">Saiba Mais</a>
+                </footer>
+            </article>
+            <article>
+                <h3>3- Importância da comunicação visual para o sucesso do negócio</h3>
+
+                <p>
+                    Aliquam metus neque, feugiat eget iaculis fermentum, bibendum quis sem. Nunc rutrum massa vel leo viverra, at tempor velit
+                    consequat. Praesent vitae interdum felis. Donec sit amet diam ut eros tempor aliquet sed et libero. Phasellus
+                    pellentesque mi ut finibus malesuada.
+                </p>
+                Data:
+                <time>01/03 - Horário: 20h às 21:30</time> -
+                <a href="http://www.impacta.com.br">Saiba Mais</a>
+            </article>
+
+        </section>
+        <section id="depoimentos">
+            <h2>Depoimentos</h2>
+                
+            <p>
+                Veja aqui o que alunos e ex-alunos estão dizendo sobre a Impacta:
+            </p>
+            
+            <blockquote>
+                Comprei meu multímetro lá, pessoal atencioso e competente, fui muito bem atendido, 
+                gostei da variedade.
+                <p>José da Silva</p>
+            </blockquote> 
+            <blockquote>
+                Como não sou aluna, não avaliarei os cursos e sim o restaurante que fica dentro.
+                Food'n Cup excelente. Comida muito boa a preços ótimos e atendimento da Márcia
+                e Levi de primeira. Recomendo.
+                <p>Jessica Joana</p>
+            </blockquote>
+        </section>
+    </main>
+{% endblock %}

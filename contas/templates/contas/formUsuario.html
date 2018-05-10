@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block conteudo %}
+{% if usuario %}
+    <h1>Alterando Usuário</h1>
+{% else %}
+    <h1>Novo Usuário</h1>
+{% endif %}
+{% if erro %}
+    <p class="erro">
+        {{ erro }}
+    </p>
+{% endif %}
+<form method="POST">
+    <p>
+        <label for="email">E-mail:</label>
+        <input id="email" name="email" type="email" value="{{ usuario.email }}" />
+    </p>
+    <p>
+        <label for="senha">Senha:</label>
+        <input id="senha" name="senha" type="password" />
+    </p>
+    <p>
+        <label for="confsenha">Confirmação de Senha:</label>
+        <input id="confsenha" name="confsenha" type="password" />
+    </p>
+    <p>
+        <button type="submit">Enviar</button>
+    </p>
+</form>
+{% endblock %}
